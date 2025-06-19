@@ -26,11 +26,11 @@ This dataset contains a total of **1,720 images** of groundnut leaves collected 
 
 <table align="center">
   <tr>
-    <td align="center"><img src="images/Healthy.jpg" width="120px"></td>
-    <td align="center"><img src="images/Alternaria Leaf Spot.jpg" width="120px"></td>
-    <td align="center"><img src="images/Leaf Spot.jpg" width="120px"></td>
-    <td align="center"><img src="images/Rust.jpg" width="120px"></td>
-    <td align="center"><img src="images/Rosette.jpg" width="120px"></td>
+    <td align="center"><img src="Ground_Nut_Sample_Input_Images/Healthy.jpg" width="120px"></td>
+    <td align="center"><img src="Ground_Nut_Sample_Input_Images/Alternaria Leaf Spot.jpg" width="120px"></td>
+    <td align="center"><img src="Ground_Nut_Sample_Input_Images/Leaf Spot.jpg" width="120px"></td>
+    <td align="center"><img src="Ground_Nut_Sample_Input_Images/Rust.jpg" width="120px"></td>
+    <td align="center"><img src="Ground_Nut_Sample_Input_Images/Rosette.jpg" width="120px"></td>
   </tr>
   <tr>
     <td align="center"><b>Healthy</b></td>
@@ -65,57 +65,63 @@ This dataset contains a total of **1,720 images** of groundnut leaves collected 
 
 </div>
 
+---
 
-## ⚙️ Model Configuration
+
+<h2>⚙️ Model Configuration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📈 Epoch-wise Performance</h2>
 <div align="center">
+<table>
+  <tr>
+    <td>
 
-| Parameter             | Value              |
-|------------------------|--------------------|
-| Input Image Size       | 224 × 224          |
-| Pretrained Weights     | ImageNet-1k        |
-| Trainable Layers       | Classification Head only |
-| Epochs                 | 20                 |
-| Batch Size             | 32                 |
-| Learning Rate          | 0.001              |
-| Optimizer              | Adam               |
-| Loss Function          | CrossEntropyLoss   |
+<!-- Left Table -->
+<b>⚙️ Model Configuration</b>
 
-</div>
+<table>
+  <tr><th>Parameter</th><th>Value</th></tr>
+  <tr><td>Input Image Size</td><td>224 × 224</td></tr>
+  <tr><td>Pretrained Weights</td><td>ImageNet-1k</td></tr>
+  <tr><td>Trainable Layers</td><td>Classification Head only</td></tr>
+  <tr><td>Epochs</td><td>20</td></tr>
+  <tr><td>Batch Size</td><td>32</td></tr>
+  <tr><td>Learning Rate</td><td>0.001</td></tr>
+  <tr><td>Optimizer</td><td>Adam</td></tr>
+  <tr><td>Loss Function</td><td>CrossEntropyLoss</td></tr>
+</table>
 
+  </td>
+  <td style="width: 40px;"></td>
+  <td>
 
-## 📈 Epoch-wise Performance
-<div align="center">
+<!-- Right Table -->
+<b>📈 Epoch-wise Performance</b>
 
-| Metric               | Value     |
-|----------------------|-----------|
-| 🧪 Final Test Accuracy  | **96.80%** |
-| 🌟 Peak Test Accuracy   | **97.38%** (Epoch 19) |
-| 📉 Final Test Loss      | **0.1317** |
-| 🔁 Total Epochs         | 20        |
+<table>
+  <tr><th>Metric</th><th>Value</th></tr>
+  <tr><td>🧪 Final Test Accuracy</td><td><b>96.80%</b></td></tr>
+  <tr><td>🌟 Peak Test Accuracy</td><td><b>97.38%</b> (Epoch 19)</td></tr>
+  <tr><td>📉 Final Test Loss</td><td><b>0.1317</b></td></tr>
+  <tr><td>🔁 Total Epochs</td><td>20</td></tr>
+</table>
 
+  </td>
+  </tr>
+</table>
 </div>
 
 ---
 
-## 🔍 Confusion Matrix & Classification Report
+## 🔍 Confusion Matrix & Loss Curve
 
-A visual representation of model performance across classes:
+Visual summaries of model performance and training convergence:
 
 <p align="center">
-  <img src="images/Confusion_Matrix.png" width="500px">
+  <img src="Output_Images/Confusion_Matrix.png" height="300px" style="margin-right: 10px;">
+  <img src="Output_Images/Loss_Curve.png" height="300px">
 </p>
 
 ---
 
-### 📉 Training & Validation Loss Curve
-
-The loss curve illustrates how the model converges during training:
-
-<p align="center">
-  <img src="images/Loss_Curve.png" width="500px">
-</p>
-
----
 
 ## ✅ Conclusion
 
